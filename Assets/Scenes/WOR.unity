@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.0023498214, g: 0.002324629, b: 0.0022980492, a: 1}
+  m_IndirectSpecularColor: {r: 0.0023434784, g: 0.0023180575, b: 0.0022917069, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -173,13 +173,13 @@ MonoBehaviour:
   reelCenter: {fileID: 0}
   usePool: 1
   symbolBgPrefabs:
-  - {fileID: 1733099557471172, guid: 66f7129f685bccb4082b66a0cc4c3c99, type: 3}
-  - {fileID: 7596256478622150482, guid: 4e5bf2674ffac8d48acc0a1cc9200a67, type: 3}
-  - {fileID: 1733099557471172, guid: 66f7129f685bccb4082b66a0cc4c3c99, type: 3}
+  - {fileID: 100000, guid: b5f234cd4e971e442b0a62004f64a497, type: 3}
+  - {fileID: 100000, guid: b5f234cd4e971e442b0a62004f64a497, type: 3}
+  - {fileID: 100000, guid: b5f234cd4e971e442b0a62004f64a497, type: 3}
   symbolPrefabs:
   - {fileID: 5599906900155464458, guid: 78eace9d38d8ed14b827fa869024da99, type: 3}
-  - {fileID: 153200, guid: 3c6a628b0a431b24ea115e9516576559, type: 3}
-  - {fileID: 147226, guid: 3a0173bdc71115149b54b4710a997413, type: 3}
+  - {fileID: 2491693316929839562, guid: 749ecabd47e23f940ab67fbbff19453a, type: 3}
+  - {fileID: 2491693316929839562, guid: 749ecabd47e23f940ab67fbbff19453a, type: 3}
   symbolInfo:
   - active: 1
     link: 0
@@ -228,20 +228,20 @@ MonoBehaviour:
   - chair
   edsave:
     autoCompute: 0
-    returnPercent: 0.85106903
-    returnTotalWon: 546731
+    returnPercent: 0.85063475
+    returnTotalWon: 546452
     returnTotalBet: 642405
-    returnData: '1,chair,142738,285476,0.5222,0.6666,0.4444
+    returnData: '1,chair,142829,285658,0.5228,0.6670,0.4447
 
-      2,chair,47285,141855,0.2595,0.2208,0.2208
+      2,chair,47543,142629,0.2610,0.2220,0.2220
 
-      3,chair,23880,119400,0.2184,0.1115,0.1859
+      3,chair,23633,118165,0.2162,0.1104,0.1839
 
-      3,book,23880,47760,0.0874,0.1115,0.0743
+      3,book,23633,47266,0.0865,0.1104,0.0736
 
-      3,ace,23880,23880,0.0437,0.1115,0.0372
+      3,ace,23633,23633,0.0432,0.1104,0.0368
 
-      0,Loss,95293,0,0.0000,0.4450,0.0000
+      0,Loss,95394,0,0.0000,0.4455,0.0000
 
 '
     returnPercentItterations: 214135
@@ -343,15 +343,15 @@ MonoBehaviour:
   betPerLineEditor: 0
   linesPlayedEditor: 3
   progress: 0.99999535
-  totalwon: 546731
+  totalwon: 546452
   totalbet: 642405
-  timeToCompute: 342.5807
+  timeToCompute: 1456.7555
   timeToComputeIterations: 214135
-  estimatedTimeToCompute: 2.5816956
-  netPayi: 261415
-  variance: 1.0577197
-  standardDeviation: 1.028455
-  volitility: 1.6969508
+  estimatedTimeToCompute: 1.708252
+  netPayi: 260686
+  variance: 1.0543461
+  standardDeviation: 1.0268135
+  volitility: 1.6942422
 --- !u!114 &118562440
 MonoBehaviour:
   m_ObjectHideFlags: 2
