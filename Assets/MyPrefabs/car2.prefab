@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5729592358912143825}
   - component: {fileID: 3069967857265567948}
   m_Layer: 0
-  m_Name: car 1
+  m_Name: car2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_SelectMode: 0
-  m_CustomReticle: {fileID: 2360201613943293661}
+  m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -293,12 +293,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3876e5469a8e4774c8e455e83060541e, type: 3}
---- !u!1 &2360201613943293661 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1833253201146048, guid: 3876e5469a8e4774c8e455e83060541e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2362029743071737373}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2362252419933458299 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4492080781097318, guid: 3876e5469a8e4774c8e455e83060541e,

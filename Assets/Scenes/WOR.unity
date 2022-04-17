@@ -179,7 +179,7 @@ MonoBehaviour:
   symbolPrefabs:
   - {fileID: 5599906900155464458, guid: 78eace9d38d8ed14b827fa869024da99, type: 3}
   - {fileID: 2491693316929839562, guid: 749ecabd47e23f940ab67fbbff19453a, type: 3}
-  - {fileID: 2491693316929839562, guid: 749ecabd47e23f940ab67fbbff19453a, type: 3}
+  - {fileID: 2673054919863159755, guid: 2d555bc877d30b94cac12f54e2202050, type: 3}
   symbolInfo:
   - active: 1
     link: 0
@@ -228,20 +228,20 @@ MonoBehaviour:
   - chair
   edsave:
     autoCompute: 0
-    returnPercent: 0.85063475
-    returnTotalWon: 546452
+    returnPercent: 0.8494828
+    returnTotalWon: 545712
     returnTotalBet: 642405
-    returnData: '1,chair,142829,285658,0.5228,0.6670,0.4447
+    returnData: '1,chair,142211,284422,0.5212,0.6641,0.4427
 
-      2,chair,47543,142629,0.2610,0.2220,0.2220
+      2,chair,47455,142365,0.2609,0.2216,0.2216
 
-      3,chair,23633,118165,0.2162,0.1104,0.1839
+      3,chair,23785,118925,0.2179,0.1111,0.1851
 
-      3,book,23633,47266,0.0865,0.1104,0.0736
+      3,book,23785,47570,0.0872,0.1111,0.0740
 
-      3,ace,23633,23633,0.0432,0.1104,0.0368
+      3,ace,23785,23785,0.0436,0.1111,0.0370
 
-      0,Loss,95394,0,0.0000,0.4455,0.0000
+      0,Loss,95561,0,0.0000,0.4463,0.0000
 
 '
     returnPercentItterations: 214135
@@ -343,15 +343,15 @@ MonoBehaviour:
   betPerLineEditor: 0
   linesPlayedEditor: 3
   progress: 0.99999535
-  totalwon: 546452
+  totalwon: 545712
   totalbet: 642405
-  timeToCompute: 1456.7555
+  timeToCompute: 704.34937
   timeToComputeIterations: 214135
-  estimatedTimeToCompute: 1.708252
-  netPayi: 260686
-  variance: 1.0543461
-  standardDeviation: 1.0268135
-  volitility: 1.6942422
+  estimatedTimeToCompute: 1.8505859
+  netPayi: 260485
+  variance: 1.0574641
+  standardDeviation: 1.0283308
+  volitility: 1.6967458
 --- !u!114 &118562440
 MonoBehaviour:
   m_ObjectHideFlags: 2
