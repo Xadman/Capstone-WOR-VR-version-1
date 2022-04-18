@@ -178,10 +178,12 @@ MonoBehaviour:
   - {fileID: 100000, guid: b5f234cd4e971e442b0a62004f64a497, type: 3}
   - {fileID: 100000, guid: b5f234cd4e971e442b0a62004f64a497, type: 3}
   - {fileID: 100000, guid: b5f234cd4e971e442b0a62004f64a497, type: 3}
+  - {fileID: 100000, guid: b5f234cd4e971e442b0a62004f64a497, type: 3}
   symbolPrefabs:
   - {fileID: 1216336052455082, guid: 5d2d294a55c8dad4f863791b2ec6aa9e, type: 3}
   - {fileID: 1039890089086394, guid: e0bdb7ccbea6bdc4195d5f0ca4f5a092, type: 3}
   - {fileID: 1289328962423014, guid: fb0b25f26d24e164ba70cdc1d4a7b35e, type: 3}
+  - {fileID: 1833253201146048, guid: 3876e5469a8e4774c8e455e83060541e, type: 3}
   symbolInfo:
   - active: 1
     link: 0
@@ -213,37 +215,64 @@ MonoBehaviour:
     clampTotal: 0
     symbolIndex: 0
     perReelFrequency: 0
+  - active: 1
+    link: 0
+    linkName: 
+    linked: 0
+    linkPosition: 0
+    isWild: 0
+    clampPerReel: 0
+    clampTotal: 0
+    symbolIndex: 0
+    perReelFrequency: 0
   displayLineBoxes: 1
   lineboxPrefab: {fileID: 0}
   winboxPrefabs:
   - {fileID: 100000, guid: c51eaaddb5e63294883a3e5f9a3a0f3e, type: 3}
   - {fileID: 100000, guid: c51eaaddb5e63294883a3e5f9a3a0f3e, type: 3}
   - {fileID: 100000, guid: c51eaaddb5e63294883a3e5f9a3a0f3e, type: 3}
+  - {fileID: 100000, guid: c51eaaddb5e63294883a3e5f9a3a0f3e, type: 3}
   reelFrequencies:
-  - freq: 010000000100000001000000
-  - freq: 010000000100000001000000
-  - freq: 010000000100000001000000
-  symbolFrequencies: 010000000100000001000000
+  - freq: 01000000010000000100000000000000
+  - freq: 01000000010000000100000000000000
+  - freq: 01000000010000000100000000000000
+  - freq: 01000000010000000100000000000000
+  symbolFrequencies: 02000000040000000500000001000000
   symbolSetNames:
-  - ace
-  - book
-  - chair
+  - car-white
+  - car-green
+  - car-blue
+  - car-yellow
   edsave:
     autoCompute: 0
-    returnPercent: 0.851946
-    returnTotalWon: 2555838
-    returnTotalBet: 3000000
-    returnData: '1,chair,666528,1333056,0.5216,0.6665,0.4444
+    returnPercent: 3.046044
+    returnTotalWon: 1956794
+    returnTotalBet: 642405
+    returnData: '1,car-yellow,120694,603470,0.3084,0.5636,0.9394
 
-      2,chair,222229,666687,0.2608,0.2222,0.2222
+      2,car-yellow,30018,300180,0.1534,0.1402,0.4673
 
-      3,chair,111219,556095,0.2176,0.1112,0.1854
+      3,car-yellow,10013,250325,0.1279,0.0468,0.3897
 
-      3,book,111219,222438,0.0870,0.1112,0.0741
+      1,car-green,120630,241260,0.1233,0.5633,0.3756
 
-      3,ace,111219,111219,0.0435,0.1112,0.0371
+      1,car-white,120122,240244,0.1228,0.5610,0.3740
 
-      0,Loss,444613,0,0.0000,0.4446,0.0000
+      2,car-blue,30018,150090,0.0767,0.1402,0.2336
+
+      1,car-blue,120694,120694,0.0617,0.5636,0.1879
+
+      2,car-green,29872,119488,0.0611,0.1395,0.1860
+
+      3,car-blue,10013,100130,0.0512,0.0468,0.1559
+
+      2,car-white,30179,90537,0.0463,0.1409,0.1409
+
+      3,car-green,10065,60390,0.0309,0.0470,0.0940
+
+      3,car-white,10180,50900,0.0260,0.0475,0.0792
+
+      0,Loss,3280,0,0.0000,0.0153,0.0000
 
 '
     returnPercentItterations: 1000000
@@ -254,13 +283,22 @@ MonoBehaviour:
     showSymbolSetsPanel: 1
     showLinesSetupPanel: 1
     showReturnPanel: 1
-    showNotificationsPanel: 1
+    showNotificationsPanel: 0
   betsPerLine:
   - value: 1
     canBet: 1
+  - value: 2
+    canBet: 0
+  - value: 5
+    canBet: 0
   symbolSets:
   - typeofSet: 0
-    symbols: 00000000
+    symbols: 02000000
+    scatterCount: 0
+    allowWilds: 1
+    explicitOrder: 0
+  - typeofSet: 0
+    symbols: 01000000
     scatterCount: 0
     allowWilds: 1
     explicitOrder: 0
@@ -270,27 +308,33 @@ MonoBehaviour:
     allowWilds: 1
     explicitOrder: 0
   - typeofSet: 0
-    symbols: 00000000
+    symbols: 03000000
     scatterCount: 0
     allowWilds: 1
     explicitOrder: 0
   setPays:
-  - pays: 000000000000000001000000
+  - pays: 010000000300000005000000
     anticipate: 000000
     paySound: {fileID: 0}
     anticipationSound: {fileID: 0}
-  - pays: 000000000000000002000000
+  - pays: 020000000400000006000000
     anticipate: 000000
     paySound: {fileID: 0}
     anticipationSound: {fileID: 0}
-  - pays: 020000000300000005000000
+  - pays: 01000000050000000a000000
+    anticipate: 000000
+    paySound: {fileID: 0}
+    anticipationSound: {fileID: 0}
+  - pays: 050000000a00000019000000
     anticipate: 000000
     paySound: {fileID: 0}
     anticipationSound: {fileID: 0}
   lines:
+  - positions: 010000000100000001000000
   - positions: 020000000200000002000000
-  - positions: 010000000200000001000000
-  - positions: 010000000300000001000000
+  - positions: 030000000300000003000000
+  - positions: 010000000200000003000000
+  - positions: 030000000200000001000000
   state: 0
   percision: 5
   useSuppliedResult: 0
@@ -344,16 +388,16 @@ MonoBehaviour:
   itterations: 1000000
   betPerLineEditor: 0
   linesPlayedEditor: 3
-  progress: 0.999999
-  totalwon: 2555838
-  totalbet: 3000000
-  timeToCompute: 105.29474
-  timeToComputeIterations: 1000000
-  estimatedTimeToCompute: 8.773499
-  netPayi: 1222468
-  variance: 1.0571002
-  standardDeviation: 1.0281538
-  volitility: 1.6964537
+  progress: 0.99999535
+  totalwon: 1956794
+  totalbet: 642405
+  timeToCompute: 64.45481
+  timeToComputeIterations: 214135
+  estimatedTimeToCompute: 1.865448
+  netPayi: 1681930
+  variance: 12.591781
+  standardDeviation: 3.5484898
+  volitility: 5.855008
 --- !u!114 &118562440
 MonoBehaviour:
   m_ObjectHideFlags: 2
