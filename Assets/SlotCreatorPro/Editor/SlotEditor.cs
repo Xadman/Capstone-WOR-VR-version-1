@@ -492,15 +492,15 @@ public class SlotEditor : Editor
 			slot.symbolBgPrefabs[index] = slot.symbolBgPrefabs[index-1];
 			slot.symbolBgPrefabs[index-1] = go;
 
-			temp = slot.winboxPrefabs[index];
+			GameObject temp = slot.winboxPrefabs[index];
 			slot.winboxPrefabs[index] = slot.winboxPrefabs[index-1];
 			slot.winboxPrefabs[index-1] = temp;
 
-			FrequencyWrapper car2 = slot.reelFrequencies[index];
+			FrequencyWrapper temp2 = slot.reelFrequencies[index];
 			slot.reelFrequencies[index] = slot.reelFrequencies[index-1];
 			slot.reelFrequencies[index-1] = temp2;
 
-			int car3 = slot.symbolFrequencies[index];
+			int temp3 = slot.symbolFrequencies[index];
 			slot.symbolFrequencies[index] = slot.symbolFrequencies[index-1];
 			slot.symbolFrequencies[index-1] = temp3;
 
@@ -519,7 +519,7 @@ public class SlotEditor : Editor
 			slot.symbolBgPrefabs[index] = slot.symbolBgPrefabs[index+1];
 			slot.symbolBgPrefabs[index+1] = go;
 
-			temp = slot.winboxPrefabs[index];
+			GameObject temp = slot.winboxPrefabs[index];
 			slot.winboxPrefabs[index] = slot.winboxPrefabs[index+1];
 			slot.winboxPrefabs[index+1] = temp;
 			
@@ -527,7 +527,7 @@ public class SlotEditor : Editor
 			slot.reelFrequencies[index] = slot.reelFrequencies[index+1];
 			slot.reelFrequencies[index+1] = car2;
 			
-			int car3 = slot.symbolFrequencies[index];
+			int temp3 = slot.symbolFrequencies[index];
 			slot.symbolFrequencies[index] = slot.symbolFrequencies[index+1];
 			slot.symbolFrequencies[index+1] = temp3;
 
@@ -1231,7 +1231,7 @@ public class SlotEditor : Editor
 			}
 
 			SpriteRenderer s1 = slot.symbolPrefabs[symbolIndex].GetComponent<SpriteRenderer>();
-			MeshFilter s2 = slot.symbolPrefabs[symbolIndex].GetComponent<MeshFilter>();
+			MeshFilter s2 = slot.symbolPrefabs[symbolIndex].GetComponentInChildren<MeshFilter>();
 
 			if (s1 != null)
 			{

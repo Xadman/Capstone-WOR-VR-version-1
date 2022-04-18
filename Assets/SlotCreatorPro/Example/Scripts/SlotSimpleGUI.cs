@@ -85,46 +85,50 @@ public class SlotSimpleGUI : MonoBehaviour {
 		}
 
 		string spinText = "Spin";
-		switch (slot.state)
-		{
-			
-		case SlotState.playingwins:
-			if (slot.refs.wins.currentWin == null) return;
-			GUI.Label(new Rect(0,Screen.height-125,Screen.width,50), slot.refs.wins.currentWin.readout.ToString ());
-			GUI.Label(new Rect(0,Screen.height-75,Screen.width,50), "Total Won: " +  slot.refs.credits.lastWin.ToString ());
-			showBetAndLinesButtons();
-			break;
-		case SlotState.ready:
-			showBetAndLinesButtons();
-			break;
-		case SlotState.snapping:
-			break;
-		case SlotState.spinning:
-			spinText = "Stop";
-			break;
-		}
-		if (GUI.Button(new Rect(50, Screen.height-100, 100, 50), spinText))
-		{
-			// Simply spin and get a random result
-			slot.spin();
-		}
+		if(slot != null)
+        {
+			switch (slot.state)
+			{
 
-		if (GUI.Button(new Rect(50, Screen.height-50, 100, 50), "Spin & Wait"))
-		{
-			// SpinWaitForResult
-			// This demonstrates the functionality to be able to load an explicit result into the slot
-			slot.spinWaitForResult(false);
+				case SlotState.playingwins:
+					if (slot.refs.wins.currentWin == null) return;
+					GUI.Label(new Rect(0, Screen.height - 125, Screen.width, 50), slot.refs.wins.currentWin.readout.ToString());
+					GUI.Label(new Rect(0, Screen.height - 75, Screen.width, 50), "Total Won: " + slot.refs.credits.lastWin.ToString());
+					showBetAndLinesButtons();
+					break;
+				case SlotState.ready:
+					showBetAndLinesButtons();
+					break;
+				case SlotState.snapping:
+					break;
+				case SlotState.spinning:
+					spinText = "Stop";
+					break;
+			}
+			if (GUI.Button(new Rect(50, Screen.height - 100, 100, 50), spinText))
+			{
+				// Simply spin and get a random result
+				slot.spin();
+			}
+
+			if (GUI.Button(new Rect(50, Screen.height - 50, 100, 50), "Spin & Wait"))
+			{
+				// SpinWaitForResult
+				// This demonstrates the functionality to be able to load an explicit result into the slot
+				slot.spinWaitForResult(false);
+			}
+			if (GUI.Button(new Rect(175, Screen.height - 50, 100, 50), "Supply Result"))
+			{
+				// SupplyResultToSpin
+				// Once you call this, the reels will stop and display the result you specify. 
+				// The array of integers must match the structure of your slot machine.
+				int[,] result = new int[,] { { 0, 2, 3 }, { 1, 2, 3 }, { 1, 2, 3 }, { 1, 2, 3 }, { 1, 2, 3 } };
+				slot.supplyResultToSpin(result);
+			}
+			GUI.skin.label.fontSize = 22;
+			GUI.Label(new Rect(0, 0, Screen.width, 50), "Credits: " + slot.refs.credits.totalCreditsReadout().ToString(), GUI.skin.label);
+			GUI.Label(new Rect(0, Screen.height - 50, Screen.width, 50), "Total Bet: " + slot.refs.credits.totalBet().ToString());
 		}
-		if (GUI.Button(new Rect(175, Screen.height-50, 100, 50), "Supply Result"))
-		{
-			// SupplyResultToSpin
-			// Once you call this, the reels will stop and display the result you specify. 
-			// The array of integers must match the structure of your slot machine.
-			int[,] result = new int[,] {{0,2,3},{1,2,3},{1,2,3},{1,2,3},{1,2,3}};
-			slot.supplyResultToSpin(result);
-		}		
-		GUI.skin.label.fontSize = 22;
-		GUI.Label(new Rect(0,0,Screen.width,50), "Credits: " +  slot.refs.credits.totalCreditsReadout().ToString(), GUI.skin.label);
-		GUI.Label(new Rect(0,Screen.height-50,Screen.width,50), "Total Bet: " +  slot.refs.credits.totalBet ().ToString ());
+		
 	}
 }
