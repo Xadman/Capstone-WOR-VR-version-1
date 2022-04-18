@@ -163,8 +163,8 @@ MonoBehaviour:
   reelHeight: 5
   reelIndent: 1
   numberOfReels: 3
-  horizontalReelPaddingPercent: 0
-  verticalSymbolPaddingPercent: 0
+  horizontalReelPaddingPercent: 20
+  verticalSymbolPaddingPercent: 20
   spinTime: 1
   spinTimeIncPerReel: 0.5
   spinTimeScatterAnticipation: 0.5
@@ -178,9 +178,9 @@ MonoBehaviour:
   - {fileID: 100000, guid: b5f234cd4e971e442b0a62004f64a497, type: 3}
   - {fileID: 100000, guid: b5f234cd4e971e442b0a62004f64a497, type: 3}
   symbolPrefabs:
-  - {fileID: 5599906900155464458, guid: 78eace9d38d8ed14b827fa869024da99, type: 3}
-  - {fileID: 2491693316929839562, guid: 749ecabd47e23f940ab67fbbff19453a, type: 3}
-  - {fileID: 2673054919863159755, guid: 2d555bc877d30b94cac12f54e2202050, type: 3}
+  - {fileID: 1216336052455082, guid: 5d2d294a55c8dad4f863791b2ec6aa9e, type: 3}
+  - {fileID: 1039890089086394, guid: e0bdb7ccbea6bdc4195d5f0ca4f5a092, type: 3}
+  - {fileID: 1289328962423014, guid: fb0b25f26d24e164ba70cdc1d4a7b35e, type: 3}
   symbolInfo:
   - active: 1
     link: 0
@@ -215,9 +215,9 @@ MonoBehaviour:
   displayLineBoxes: 1
   lineboxPrefab: {fileID: 0}
   winboxPrefabs:
-  - {fileID: 0}
-  - {fileID: 147226, guid: 3a0173bdc71115149b54b4710a997413, type: 3}
-  - {fileID: 0}
+  - {fileID: 100000, guid: c51eaaddb5e63294883a3e5f9a3a0f3e, type: 3}
+  - {fileID: 100000, guid: c51eaaddb5e63294883a3e5f9a3a0f3e, type: 3}
+  - {fileID: 100000, guid: c51eaaddb5e63294883a3e5f9a3a0f3e, type: 3}
   reelFrequencies:
   - freq: 010000000100000001000000
   - freq: 010000000100000001000000
@@ -229,20 +229,20 @@ MonoBehaviour:
   - chair
   edsave:
     autoCompute: 0
-    returnPercent: 0.8535846
-    returnTotalWon: 548347
+    returnPercent: 0.85267705
+    returnTotalWon: 547764
     returnTotalBet: 642405
-    returnData: '1,chair,142734,285468,0.5206,0.6666,0.4444
+    returnData: '1,chair,142735,285470,0.5212,0.6666,0.4444
 
-      2,chair,47833,143499,0.2617,0.2234,0.2234
+      2,chair,47458,142374,0.2599,0.2216,0.2216
 
-      3,chair,23876,119380,0.2177,0.1115,0.1858
+      3,chair,23984,119920,0.2189,0.1120,0.1867
 
-      3,book,23876,47752,0.0871,0.1115,0.0743
+      3,book,23984,47968,0.0876,0.1120,0.0747
 
-      3,ace,23876,23876,0.0435,0.1115,0.0372
+      3,ace,23984,23984,0.0438,0.1120,0.0373
 
-      0,Loss,95009,0,0.0000,0.4437,0.0000
+      0,Loss,95019,0,0.0000,0.4437,0.0000
 
 '
     returnPercentItterations: 214135
@@ -344,15 +344,15 @@ MonoBehaviour:
   betPerLineEditor: 0
   linesPlayedEditor: 3
   progress: 0.99999535
-  totalwon: 547207
+  totalwon: 547764
   totalbet: 642405
-  timeToCompute: 591.5222
+  timeToCompute: 201.28967
   timeToComputeIterations: 214135
-  estimatedTimeToCompute: 2.7004395
-  netPayi: 261957
-  variance: 1.0595739
-  standardDeviation: 1.029356
-  volitility: 1.6984373
+  estimatedTimeToCompute: 1.530014
+  netPayi: 262552
+  variance: 1.059087
+  standardDeviation: 1.0291195
+  volitility: 1.6980472
 --- !u!114 &118562440
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -396,7 +396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118562435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.025, y: 2.5, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -866,7 +866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323115163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.58, z: 1.06}
+  m_LocalPosition: {x: 6.84, y: -0.58, z: -4.69}
   m_LocalScale: {x: 0.9035868, y: 0.22535679, z: 0.3032568}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1439,7 +1439,7 @@ PrefabInstance:
     - target: {fileID: 1520420801046542915, guid: a2018f7c54000ce40bf786db5ec61f33,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -8.32
       objectReference: {fileID: 0}
     - target: {fileID: 1520420801046542915, guid: a2018f7c54000ce40bf786db5ec61f33,
         type: 3}

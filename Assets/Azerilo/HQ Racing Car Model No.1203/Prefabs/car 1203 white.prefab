@@ -827,6 +827,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4323917520585024}
+  - component: {fileID: 1346322967743123905}
+  - component: {fileID: 8007215115524487515}
   m_Layer: 14
   m_Name: car 1203 white
   m_TagString: Untagged
@@ -867,6 +869,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346322967743123905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289328962423014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcea10771d0c3584f834803bb861ed66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linked: 0
+  linkPosition: 0
+  isWild: 0
+  clampPerReel: 0
+  clampTotal: 0
+  symbolIndex: 0
+  perReelFrequency: 0
+  reelIndex: 0
+--- !u!33 &8007215115524487515
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289328962423014}
+  m_Mesh: {fileID: 4300022, guid: 09daf63b07ae7ae438ec02fd869b9967, type: 3}
 --- !u!1 &1323220119245126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,7 +1674,7 @@ GameObject:
   - component: {fileID: 23357955174719180}
   m_Layer: 14
   m_Name: body
-  m_TagString: Untagged
+  m_TagString: Body
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
