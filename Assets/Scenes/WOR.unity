@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.0023434784, g: 0.0023180575, b: 0.0022917069, a: 1}
+  m_IndirectSpecularColor: {r: 0.0023498214, g: 0.002324629, b: 0.0022980492, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 118562439}
   - component: {fileID: 118562438}
   - component: {fileID: 118562437}
+  - component: {fileID: 118562443}
   - component: {fileID: 118562436}
   m_Layer: 0
   m_Name: Ace
@@ -179,7 +180,7 @@ MonoBehaviour:
   symbolPrefabs:
   - {fileID: 5599906900155464458, guid: 78eace9d38d8ed14b827fa869024da99, type: 3}
   - {fileID: 2491693316929839562, guid: 749ecabd47e23f940ab67fbbff19453a, type: 3}
-  - {fileID: 2491693316929839562, guid: 749ecabd47e23f940ab67fbbff19453a, type: 3}
+  - {fileID: 2673054919863159755, guid: 2d555bc877d30b94cac12f54e2202050, type: 3}
   symbolInfo:
   - active: 1
     link: 0
@@ -228,20 +229,20 @@ MonoBehaviour:
   - chair
   edsave:
     autoCompute: 0
-    returnPercent: 0.85063475
-    returnTotalWon: 546452
+    returnPercent: 0.8535846
+    returnTotalWon: 548347
     returnTotalBet: 642405
-    returnData: '1,chair,142829,285658,0.5228,0.6670,0.4447
+    returnData: '1,chair,142734,285468,0.5206,0.6666,0.4444
 
-      2,chair,47543,142629,0.2610,0.2220,0.2220
+      2,chair,47833,143499,0.2617,0.2234,0.2234
 
-      3,chair,23633,118165,0.2162,0.1104,0.1839
+      3,chair,23876,119380,0.2177,0.1115,0.1858
 
-      3,book,23633,47266,0.0865,0.1104,0.0736
+      3,book,23876,47752,0.0871,0.1115,0.0743
 
-      3,ace,23633,23633,0.0432,0.1104,0.0368
+      3,ace,23876,23876,0.0435,0.1115,0.0372
 
-      0,Loss,95394,0,0.0000,0.4455,0.0000
+      0,Loss,95009,0,0.0000,0.4437,0.0000
 
 '
     returnPercentItterations: 214135
@@ -343,15 +344,15 @@ MonoBehaviour:
   betPerLineEditor: 0
   linesPlayedEditor: 3
   progress: 0.99999535
-  totalwon: 546452
+  totalwon: 547207
   totalbet: 642405
-  timeToCompute: 1456.7555
+  timeToCompute: 591.5222
   timeToComputeIterations: 214135
-  estimatedTimeToCompute: 1.708252
-  netPayi: 260686
-  variance: 1.0543461
-  standardDeviation: 1.0268135
-  volitility: 1.6942422
+  estimatedTimeToCompute: 2.7004395
+  netPayi: 261957
+  variance: 1.0595739
+  standardDeviation: 1.029356
+  volitility: 1.6984373
 --- !u!114 &118562440
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -401,6 +402,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118562443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118562435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6d780f4a567a849beb12a5ec526129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skin: {fileID: 11400000, guid: c9133c91cd117417d0000cf8a220b639, type: 2}
 --- !u!1001 &256230491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -418,15 +432,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4323917520585024, guid: fb0b25f26d24e164ba70cdc1d4a7b35e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.24
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4323917520585024, guid: fb0b25f26d24e164ba70cdc1d4a7b35e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4323917520585024, guid: fb0b25f26d24e164ba70cdc1d4a7b35e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.1
+      value: 9.54
       objectReference: {fileID: 0}
     - target: {fileID: 4323917520585024, guid: fb0b25f26d24e164ba70cdc1d4a7b35e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -990,15 +1004,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4492080781097318, guid: 3876e5469a8e4774c8e455e83060541e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.53
+      value: 15.7
       objectReference: {fileID: 0}
     - target: {fileID: 4492080781097318, guid: 3876e5469a8e4774c8e455e83060541e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.08
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 4492080781097318, guid: 3876e5469a8e4774c8e455e83060541e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.31
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 4492080781097318, guid: 3876e5469a8e4774c8e455e83060541e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1180,6 +1194,19 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &1428154296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428154291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6d780f4a567a849beb12a5ec526129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skin: {fileID: 11400000, guid: c9133c91cd117417d0000cf8a220b639, type: 2}
 --- !u!1001 &1618712019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1197,15 +1224,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4918769918418808, guid: e0bdb7ccbea6bdc4195d5f0ca4f5a092, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.55
+      value: 18.2
       objectReference: {fileID: 0}
     - target: {fileID: 4918769918418808, guid: e0bdb7ccbea6bdc4195d5f0ca4f5a092, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.63
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 4918769918418808, guid: e0bdb7ccbea6bdc4195d5f0ca4f5a092, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.45
+      value: 7.84
       objectReference: {fileID: 0}
     - target: {fileID: 4918769918418808, guid: e0bdb7ccbea6bdc4195d5f0ca4f5a092, type: 3}
       propertyPath: m_LocalRotation.w

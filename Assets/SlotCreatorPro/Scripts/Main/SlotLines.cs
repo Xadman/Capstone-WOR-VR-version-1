@@ -55,11 +55,12 @@ public class SlotLines : MonoBehaviour {
 			lineRenderers[i].SetActive(false);
 		}
 	}
-	
-	#endregion
-	
-	#region Create Lines
-	void createLineRenderer(int lineNumber, List<Vector3> points, float width, Color c1, Color c2)
+
+    #endregion
+
+    #region Create Lines
+    [System.Obsolete]
+    void createLineRenderer(int lineNumber, List<Vector3> points, float width, Color c1, Color c2)
 	{
 		List<int> pos = GetComponent<Slot>().lines[lineNumber].positions;
 		

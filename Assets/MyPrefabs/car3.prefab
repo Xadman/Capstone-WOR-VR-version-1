@@ -2962,7 +2962,7 @@ GameObject:
   - component: {fileID: 4406050183733563906}
   - component: {fileID: -4355121984596401686}
   m_Layer: 0
-  m_Name: car 1203 green (1)
+  m_Name: car3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
