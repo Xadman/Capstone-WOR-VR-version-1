@@ -484,9 +484,9 @@ public class SlotEditor : Editor
 		if (index > 0)
 		if (GUILayout.Button("", EditorStyles.miniButton, GUILayout.Width(30))) {
 
-			GameObject temp = slot.symbolPrefabs[index];
+			GameObject car1= slot.symbolPrefabs[index];
 			slot.symbolPrefabs[index] = slot.symbolPrefabs[index-1];
-			slot.symbolPrefabs[index-1] = temp;
+			slot.symbolPrefabs[index-1] = car1;
 
 			GameObject go = slot.symbolBgPrefabs[index];
 			slot.symbolBgPrefabs[index] = slot.symbolBgPrefabs[index-1];
@@ -496,11 +496,11 @@ public class SlotEditor : Editor
 			slot.winboxPrefabs[index] = slot.winboxPrefabs[index-1];
 			slot.winboxPrefabs[index-1] = temp;
 
-			FrequencyWrapper temp2 = slot.reelFrequencies[index];
+			FrequencyWrapper car2 = slot.reelFrequencies[index];
 			slot.reelFrequencies[index] = slot.reelFrequencies[index-1];
 			slot.reelFrequencies[index-1] = temp2;
 
-			int temp3 = slot.symbolFrequencies[index];
+			int car3 = slot.symbolFrequencies[index];
 			slot.symbolFrequencies[index] = slot.symbolFrequencies[index-1];
 			slot.symbolFrequencies[index-1] = temp3;
 
@@ -511,9 +511,9 @@ public class SlotEditor : Editor
 		if (index < slot.symbolPrefabs.Capacity - 1)
 		if (GUILayout.Button("v", EditorStyles.miniButton, GUILayout.Width(30))) {
 
-			GameObject temp = slot.symbolPrefabs[index];
+			GameObject car1 = slot.symbolPrefabs[index];
 			slot.symbolPrefabs[index] = slot.symbolPrefabs[index+1];
-			slot.symbolPrefabs[index+1] = temp;
+			slot.symbolPrefabs[index+1] = car1;
 
 			GameObject go = slot.symbolBgPrefabs[index];
 			slot.symbolBgPrefabs[index] = slot.symbolBgPrefabs[index+1];
@@ -523,11 +523,11 @@ public class SlotEditor : Editor
 			slot.winboxPrefabs[index] = slot.winboxPrefabs[index+1];
 			slot.winboxPrefabs[index+1] = temp;
 			
-			FrequencyWrapper temp2 = slot.reelFrequencies[index];
+			FrequencyWrapper car2 = slot.reelFrequencies[index];
 			slot.reelFrequencies[index] = slot.reelFrequencies[index+1];
-			slot.reelFrequencies[index+1] = temp2;
+			slot.reelFrequencies[index+1] = car2;
 			
-			int temp3 = slot.symbolFrequencies[index];
+			int car3 = slot.symbolFrequencies[index];
 			slot.symbolFrequencies[index] = slot.symbolFrequencies[index+1];
 			slot.symbolFrequencies[index+1] = temp3;
 
